@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
        4. HERO TYPING ANIMATION
        ========================================================================== */
     const typingTextEl = document.getElementById('typing-text');
-    const roles = ['Full-Stack Developer', 'UI/UX Designer', 'Creative Programmer', 'Problem Solver'];
+    const roles = ['Fullstack Developer', 'Java Coder (DSA)', 'MERN Stack Intern', 'Problem Solver'];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
