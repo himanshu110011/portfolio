@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera | Creative Full-Stack Developer</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Professional portfolio of Alex Rivera, a Creative Full-Stack Developer specializing in responsive design, modern JS/React, sleek glassmorphism, and performance-optimized web apps.">
+    <!-- Google Fonts - Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CUSTOM LOADER SCREEN -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <span class="loader-logo">Alex<span class="highlight">.Dev</span></span>
+            <div class="loader-bar-bg">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION BAR -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">Alex<span class="highlight">.Dev</span></a>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="desktop-nav" aria-label="Desktop Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Toolbar (Theme toggle + Menu Button) -->
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE DRAWER MENU -->
+    <div id="mobile-menu" class="mobile-menu-overlay">
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <!-- Background Decorative Blobs -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            
+            <div class="container hero-container grid-2">
+                <!-- Hero Left Content -->
+                <div class="hero-content">
+                    <div class="badge-accent">Available for Freelance & Full-time</div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Alex Rivera</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typing-text"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        A passionate full-stack engineer based in Tech City, specializing in creating high-performance, visually gorgeous web applications. I design responsive, user-friendly digital experiences using clean code and modern aesthetics.
+                    </p>
+                    <div class="hero-cta">
+                        <button id="hero-hire-btn" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Hire Me
+                        </button>
+                        <a href="resume.pdf" download="Alex_Rivera_Resume.pdf" class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <!-- Social icons in Hero -->
+                    <div class="hero-socials">
+                        <span class="social-label">Connect with me:</span>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Media (Profile Photo) -->
+                <div class="hero-media">
+                    <div class="profile-image-frame">
+                        <div class="glowing-border-glow"></div>
+                        <img src="images/avatar.png" alt="Alex Rivera - Developer Portrait" class="profile-img">
+                        <!-- Floating Tech Badges -->
+                        <div class="floating-badge badge-top-right">
+                            <i class="fa-brands fa-react react-spin"></i> <span>React</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-left">
+                            <i class="fa-brands fa-js-square text-warning"></i> <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down to About Section">
+                    <span class="mouse-icon">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="scroll-text">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Journey & Background</h2>
+                    <p class="section-subtitle">Bridging the gap between creative visual design and robust software engineering.</p>
+                </div>
+
+                <div class="about-container grid-about">
+                    <!-- About Profile Card -->
+                    <div class="about-card-profile">
+                        <div class="about-stats-grid">
+                            <div class="stat-box">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Exp.</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">99%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="about-quote">
+                            <p>"Clean code is not just code that works; it's code that can be read, loved, and easily maintained by others."</p>
+                        </div>
+                    </div>
+
+                    <!-- About Tabs Content Area -->
+                    <div class="about-tabs-container">
+                        <!-- Tab Navigation Buttons -->
+                        <div class="tab-buttons" role="tablist">
+                            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="story-tab" id="btn-story">Story & Goals</button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="timeline-tab" id="btn-timeline">Experience</button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="interests-tab" id="btn-interests">Interests</button>
+                        </div>
+
+                        <!-- Tab Panels -->
+                        <div class="tab-panels">
+                            <!-- Panel 1: Story & Goals -->
+                            <div id="story-tab" class="tab-panel active" role="tabpanel" aria-labelledby="btn-story">
+                                <h3 class="tab-title">Crafting Elegant Digital Solutions</h3>
+                                <p class="tab-desc">
+                                    I started my coding journey building simple static web pages. Over the years, that curiosity developed into a deep passion for building high-performing interactive web apps. I love solving complex structural challenges and making sure user interfaces feel fluid, clean, and intuitive.
+                                </p>
+                                <h4 class="tab-sub-heading">Career Goals</h4>
+                                <p class="tab-desc">
+                                    My goal is to work on scale-demanding web systems, contribute actively to open-source UI libraries, and master modern cloud architecture. I aim to create technology that leaves a positive, lasting impact on its users.
+                                </p>
+                                <!-- Interactive Show/Hide Toggle Button -->
+                                <div class="expandable-story-wrapper">
+                                    <div id="expanded-story" class="expanded-content">
+                                        <p class="tab-desc text-muted">
+                                            In addition to web programming, I devote significant time to studying design systems, color theory, and micro-interactions. I believe a good engineer understands design constraints, and a good designer understands engineering feasibility. This dual perspective allows me to build robust systems without sacrificing visual fidelity.
+                                        </p>
+                                    </div>
+                                    <button id="toggle-story-btn" class="btn btn-text-accent">Read More About Me <i class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Panel 2: Experience & Education Timeline -->
+                            <div id="timeline-tab" class="tab-panel" role="tabpanel" aria-labelledby="btn-timeline">
+                                <h3 class="tab-title">Work & Education Timeline</h3>
+                                <div class="timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-date">2024 - Present</div>
+                                        <div class="timeline-header">
+                                            <h4>Software Engineer</h4>
+                                            <span class="timeline-company">TechNova Solutions</span>
+                                        </div>
+                                        <p class="timeline-desc">Engineered robust React components and modular Node.js API endpoints. Increased application responsiveness by 30% by refactoring state management and visual assets.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-date">2023 - 2024</div>
+                                        <div class="timeline-header">
+                                            <h4>Junior Frontend Developer</h4>
+                                            <span class="timeline-company">PixelCraft Studio</span>
+                                        </div>
+                                        <p class="timeline-desc">Crafted interactive UI mockups into standards-compliant HTML/CSS/JS. Implemented micro-interactions, dark/light modes, and custom CSS Grid configurations.</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-date">2019 - 2023</div>
+                                        <div class="timeline-header">
+                                            <h4>B.S. in Computer Science</h4>
+                                            <span class="timeline-company">State University</span>
+                                        </div>
+                                        <p class="timeline-desc">Graduated Magna Cum Laude. Focused on Algorithms, Web Engineering, and Software Design Patterns. Led the university web development club for 2 terms.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Panel 3: Hobbies & Interests -->
+                            <div id="interests-tab" class="tab-panel" role="tabpanel" aria-labelledby="btn-interests">
+                                <h3 class="tab-title">What Keeps Me Inspired</h3>
+                                <p class="tab-desc">When I am not coding, you can find me engaged in creative and outdoor activities that recharge my mental battery.</p>
+                                <div class="interests-grid">
+                                    <div class="interest-card">
+                                        <i class="fa-solid fa-code-branch interest-icon"></i>
+                                        <h5>Open Source</h5>
+                                        <p>Contributing to front-end tooling and custom component UI kits.</p>
+                                    </div>
+                                    <div class="interest-card">
+                                        <i class="fa-solid fa-pen-nib interest-icon"></i>
+                                        <h5>UI Prototyping</h5>
+                                        <p>Experimenting with motion graphics and glassmorphism layouts in Figma.</p>
+                                    </div>
+                                    <div class="interest-card">
+                                        <i class="fa-solid fa-gamepad interest-icon"></i>
+                                        <h5>Game Dev</h5>
+                                        <p>Creating modular 2D physics puzzles with Canvas and vanilla Javascript.</p>
+                                    </div>
+                                    <div class="interest-card">
+                                        <i class="fa-solid fa-mountain-sun interest-icon"></i>
+                                        <h5>Hiking</h5>
+                                        <p>Exploring mountain trails and capturing nature landscape photography.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="section-title">My Technical Capabilities</h2>
+                    <p class="section-subtitle">A stack crafted to build modern, performant, and responsive web systems.</p>
+                </div>
+
+                <div class="skills-grid grid-3">
+                    <!-- Frontend Skills Card -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-laptop-code header-icon"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3 (Grid/Flex)</span>
+                                    <span class="skill-percentage" data-val="95">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percentage" data-val="90">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React & Next.js</span>
+                                    <span class="skill-percentage" data-val="85">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TailwindCSS & Bootstrap</span>
+                                    <span class="skill-percentage" data-val="88">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills Card -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-server header-icon"></i>
+                            <h3>Backend & Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js & Express</span>
+                                    <span class="skill-percentage" data-val="82">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="82%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RESTful APIs & JSON</span>
+                                    <span class="skill-percentage" data-val="87">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="87%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PostgreSQL & MongoDB</span>
+                                    <span class="skill-percentage" data-val="80">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python & Flask</span>
+                                    <span class="skill-percentage" data-val="75">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools Card -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-screwdriver-wrench header-icon"></i>
+                            <h3>Tools & Deployment</h3>
+                        </div>
+                        <div class="skills-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub Version Control</span>
+                                    <span class="skill-percentage" data-val="90">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker Containers</span>
+                                    <span class="skill-percentage" data-val="70">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vercel & Netlify Deployment</span>
+                                    <span class="skill-percentage" data-val="88">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="88%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma UI/UX Design</span>
+                                    <span class="skill-percentage" data-val="83">0%</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div class="progress-bar-fill" data-progress="83%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Recent Handcrafted Work</h2>
+                    <p class="section-subtitle">Showcasing projects spanning web systems, responsive apps, and design paradigms.</p>
+                </div>
+
+                <!-- Projects Filter Controls -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid grid-3">
+                    <!-- Project 1 Card -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="images/project1.png" alt="TaskFlow - Collaborative Task Manager Dashboard Screenshot" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Source Code on GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Live Project Site"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="project-tag-badge">Fullstack</span>
+                                <span class="project-tag-badge">React</span>
+                            </div>
+                            <h3 class="project-title">TaskFlow Dashboard</h3>
+                            <p class="project-description">A real-time team collaboration platform with kanban boards, interactive burn-down statistics, and custom drag-and-drop workspace controls.</p>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 Card -->
+                    <article class="project-card" data-category="frontend">
+                        <div class="project-image-wrapper">
+                            <img src="images/project2.png" alt="Aura Sneakers Shop Mobile App Preview Screenshot" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Source Code on GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Live Project Site"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="project-tag-badge">Frontend</span>
+                                <span class="project-tag-badge">Mobile-first</span>
+                            </div>
+                            <h3 class="project-title">Aura Sneakers Shop</h3>
+                            <p class="project-description">A mobile-first shoeware catalog presenting complex micro-interactions, responsive sizing charts, and a glassmorphic custom order drawer.</p>
+                            <div class="project-tech-stack">
+                                <span>HTML5</span>
+                                <span>TailwindCSS</span>
+                                <span>Vanilla JS</span>
+                                <span>GSAP</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 Card -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-image-wrapper">
+                            <img src="images/project3.png" alt="Synapse Analytics Platform Dashboard Preview" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Source Code on GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Live Project Site"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="project-tag-badge">Fullstack</span>
+                                <span class="project-tag-badge">Analytics</span>
+                            </div>
+                            <h3 class="project-title">Synapse AI Analytics</h3>
+                            <p class="project-description">An analytics dashboard rendering server load performance and CPU cycles, featuring machine learning anomaly alerts and customized charting metrics.</p>
+                            <div class="project-tech-stack">
+                                <span>Next.js</span>
+                                <span>Chart.js</span>
+                                <span>Python</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <p class="section-subtitle">Have a project idea, want to hire me, or just want to chat? Drop a message!</p>
+                </div>
+
+                <div class="contact-grid grid-2">
+                    <!-- Contact Information Column -->
+                    <div class="contact-info-panel">
+                        <h3 class="contact-panel-title">Get in Touch</h3>
+                        <p class="contact-panel-desc">Feel free to reach out via these direct channels or by filling out the form. I typically respond within 24 business hours.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <span>Email Me</span>
+                                    <a href="mailto:alex.rivera@example.com">alex.rivera@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-text">
+                                    <span>Call/Text</span>
+                                    <a href="tel:+15550192834">+1 (555) 019-2834</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <p>Tech City, TC 94016</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Social Links -->
+                        <div class="contact-social-section">
+                            <h4>Find me on:</h4>
+                            <div class="social-icon-badges">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="GitHub Profile Link">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="LinkedIn Profile Link">
+                                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group-row grid-2">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name <span class="required">*</span></label>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe">
+                                    <span class="error-msg" id="error-name">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email <span class="required">*</span></label>
+                                    <input type="email" id="form-email" name="email" placeholder="john@example.com">
+                                    <span class="error-msg" id="error-email">Please enter a valid email address</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="form-subject" name="subject" placeholder="Project Inquiry / Collaboration">
+                                <span class="error-msg" id="error-subject">Please enter a subject</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Your Message <span class="required">*</span></label>
+                                <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                                <span class="error-msg" id="error-message">Please enter a message</span>
+                            </div>
+                            
+                            <button type="submit" id="form-submit-btn" class="btn btn-primary btn-full-width">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top-row">
+                <a href="#home" class="logo">Alex<span class="highlight">.Dev</span></a>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom-row">
+                <p class="copyright-text">&copy; 2026 Alex Rivera. Handcrafted with passion. All rights reserved.</p>
+                <div class="footer-social-icons">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL-TO-TOP BUTTON -->
+    <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll back to top of the page">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- CONTACT FORM SUCCESS MODAL -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3 class="modal-title">Thank You!</h3>
+            <p class="modal-desc">Your message has been successfully received. I will review it and get back to you shortly.</p>
+            <button id="close-modal-btn" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- HIRE ME MODAL DIALOG -->
+    <div id="hire-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3 class="modal-title">Work with Me!</h3>
+            <p class="modal-desc">Let's collaborate on your next big project. Fill out the contact form or send a direct email, and let's turn your ideas into functional digital interfaces.</p>
+            <div class="modal-actions">
+                <button id="hire-modal-contact-btn" class="btn btn-primary">Go to Form</button>
+                <button id="close-hire-modal-btn" class="btn btn-secondary">Maybe Later</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
