@@ -41,17 +41,13 @@ Personal-Portfolio/
 ├── style.css           # CSS Variable configuration, layout structure, media queries
 ├── script.js          # Core JS logic (observers, filter toggles, validation rules)
 ├── README.md           # Professional project documentation
-│
-├── resume.txt          # Plain text formatted resume
+|
 ├── resume.pdf          # PDF download formatted resume
 │
 ├── images/            # Graphics and mockups
 │   ├── avatar.png      # Himanshu's developer avatar (AI-generated)
 │   ├── project1.png    # AI-powered Smart Job Portal screenshot
-│   ├── project2.png    # Java DSA Visualizer preview
-│   ├── project3.png    # LeetCode Stats Tracker dashboard preview
-│   ├── screenshot_desktop.png # Captured desktop site preview
-│   └── screenshot_mobile.png  # Captured mobile site preview
+|
 │
 └── projects/           # Secondary directory for project resources
 ```
